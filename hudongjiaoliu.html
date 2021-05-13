@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="bg-white">
+<div class="main">
+    <!--头部导航栏start-->
+    <header class="bg-orange h100">
+        <a href="index.html" class="white font22 d-ib">全部</a>
+        <a href="activity_information.html" class="white font22 d-ib">活动公告</a>
+        <a href="students_status.html" class="white font22 d-ib">学员动态</a>
+        <a href="communication.html" class="white font22 d-ib">互动交流</a>
+        <a href="activity_apply.html" class="white font22 d-ib">活动报名</a>
+    </header>
+    <!--头部导航栏end-->
+    <div id="back">
+        <span class="backtext">返回</span>
+    </div>
+    <div id="content">
+        <div class="put">
+     <span class="radio_box" id="box-1">
+                   <input type="radio" id="radio_1" name="radio" checked>
+                   <label for="radio_1"></label>
+                  <span class="put-text">发表新帖</sapn>
+     </span>
+     <span class="radio_box" id="box-2">
+                   <input type="radio" id="radio_2" name="radio">
+                   <label for="radio_2"></label>
+                   <span class="put-text">发表投票</span>
+     </span>
+        </div>
+        <div class="choose">
+            <input type="text" class="biaoti" placeholder="标题标题标题标题标题">
+       <span class="radio_box" id="box-3">
+                   <input type="checkbox" id="radio_3" name="radio" checked>
+                   <label for="radio_3"></label>
+                  <span class="put-text" id="huati">话题</span>
+       </span>
+        </div>
+        <textarea rows="" cols="" class="gonggao">
+        </textarea>
+        <div class="qianming">
+        <span class="radio_box" id="box-4">
+                   <input type="checkbox" id="radio_4" name="radio" checked>
+                   <label for="radio_4" id="diff"></label>
+                  <span class="put-text" >使用签名档</span>
+       </span>
+            <input type="text"  placeholder="公告公告" id="qmd">
+        </div>
+        <div class="fabiao">
+            <p id="fabiao"><span class="fa">发</span>表</p>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        /*导航栏菜单变化*/
+        $('header a').eq(0).css('border','1px solid #fff');
+        $('header a').click(function(){
+            $('header a').css('border','1px solid transparent');
+            $(this).css('border','1px solid #fff');
+        });
+
+        /*轮播图控制*/
+        var mySwiper = new Swiper('.swiper-container',{
+            pagination : '.swiper-pagination'
+        });
+
+    });
+    $(document).ready(function(){
+        $("#fabiao").click(function(){
+
+                $.post("/example/jquery/demo_test_post.php",
+                        {
+                            name:"Zhao Yuan",
+                            age:"23"
+                        },
+                        function(status){
+                            console.log("状态：" + status);
+                        });
+
+        });
+
+    });
+</script>
+</html>

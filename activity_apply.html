@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body class="bg-white">
+	<div class="main">
+		<!--头部导航栏start-->
+		<header class="bg-orange h100">
+			<a href="index.html" class="white font22 d-ib">全部</a>
+			<a href="activity_information.html" class="white font22 d-ib">活动公告</a>
+			<a href="students_status.html" class="white font22 d-ib">学员动态</a>
+			<a href="communication.html" class="white font22 d-ib">互动交流</a>
+			<a href="activity_apply.html" class="white font22 d-ib">活动报名</a>
+		</header>
+		<!--头部导航栏end-->
+		<!--轮播图start-->
+		<div class="swiper-container wid100 h300">
+		    <div class="swiper-wrapper ">
+		        <div class="swiper-slide"><img src="img/banner17.jpg" class="wid100"/></div>
+		        <div class="swiper-slide"><img src="img/banner16.jpg" class="wid100"/></div>
+		        <div class="swiper-slide"><img src="img/banner15.jpg" class="wid100"/></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>
+		<!--轮播图end-->
+		
+		<!--列表信息start-->
+		<div class="list mt15">
+			<ul>
+				<li class="wid100 h220 bor-btm">
+					<div class="list_img"><img src="img/list_img1.jpg" class="wid100"></div>
+					<div class="list_dec gray">
+						<div class="font24 dec_change">
+							<span class="orange fw-700">学院动态:</span>
+							<p>学院动态学院动态学院动态学院动</p>
+						</div>
+						<div class="font18 dec_time align-btm"><img src="img/time.png" class="wid7 mr15"/>Apr,03,2016</div>
+					</div>
+				</li>
+				<li class="wid100 h220 bor-btm">
+					<div class="list_img"><img src="img/list_img2.jpg" class="wid100"></div>
+					<div class="list_dec gray">
+						<div class="font24 dec_change">
+							<span class="orange fw-700">学院动态:</span>
+							<p>学院动态学院动态学院动态学院动</p>
+						</div>
+						<div class="font18 dec_time align-btm"><img src="img/time.png" class="wid7 mr15"/>Apr,03,2016</div>
+					</div>
+				</li>
+				<li class="wid100 h220 bor-btm">
+					<div class="list_img"><img src="img/list_img3.jpg" class="wid100"></div>
+					<div class="list_dec gray">
+						<div class="font24 dec_change">
+							<span class="orange fw-700">学院动态:</span>
+							<p>学院动态学院动态学院动态学院动</p>
+						</div>
+						<div class="font18 dec_time align-btm"><img src="img/time.png" class="wid7 mr15"/>Apr,03,2016</div>
+					</div>
+				</li>
+			</ul>
+		<div>
+		<!--列表信息end-->
+	</div>	
+	</body>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*导航栏菜单变化*/
+			$('header a').eq(4).css('border','1px solid #fff');
+			$('header a').click(function(){
+				$('header a').css('border','1px solid transparent');
+				$(this).css('border','1px solid #fff');
+			});
+			
+			/*轮播图控制*/
+			var mySwiper = new Swiper('.swiper-container',{
+				pagination : '.swiper-pagination'
+			});
+			
+		});
+
+	</script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body class="bg-white">
+	<div class="main">
+		<!--头部导航栏start-->
+		<header class="bg-orange h100">
+			<a href="index.html" class="white font22 d-ib">全部</a>
+			<a href="activity_information.html" class="white font22 d-ib">活动公告</a>
+			<a href="students_status.html" class="white font22 d-ib">学员动态</a>
+			<a href="communication.html" class="white font22 d-ib">互动交流</a>
+			<a href="activity_apply.html" class="white font22 d-ib">活动报名</a>
+		</header>
+		<!--头部导航栏end-->
+		<!--发帖start-->
+		<div class="post wid100 h300 bg-blue">
+			<div class="font36 white">标题标题标题标题标题标题标题标题标题标题标题</div>
+			<div class="orange font22"><span class="mr20">论题：48</span><span>总贴：300</span></div>
+			<div class="white font22">
+				<div>
+					<span class="post_logo_box"><img src="img/edition_logo.png" class="w40 mr15"/>版本介绍：</span>
+				</div>
+				<div class="post_btn_box">
+					<span class="post_logo_box"><img src="img/edition_logo.png" class="w40 mr15"/>版主：</span>
+					<button class=" white bg-orange post_btn font24 h50">发帖</button>
+				</div>	
+			</div>
+		</div>
+		<!--发帖end-->
+		<!--分页导航start-->
+		<div class="pagination h80 wid100 bg-orange white font22">
+			<div><span class="back_index">返回首页</span></div>
+			<div>
+				<p>
+					<span class="number">1</span>
+					<span class="number">2</span>
+					<span class="number">3</span>
+					<span class="number">4</span>
+					<span class="number">5</span>
+					<span class="number">···</span>
+					<span class="next">下一页</span>
+				</p>
+			</div>
+		</div>
+		<!--分页导航end-->
+		<!--贴子列表信息start-->
+		<div class="post_list">
+			<ul>
+				<li class="wid100 font24 bor-btm">
+					<div class="wid50">标题</div>
+					<div class="wid20">作者</div>
+					<div class="wid20">回复/访问</div>
+				</li>
+				<li class="wid100 font24 bor-btm">
+					<div class="wid50">标题标题标题标题标题标题标题标题标题</div>
+					<div class="wid20">
+						<p class="fw-700">张国栋</p>
+						<p class="font20">Apr.03</p>
+					</div>
+					<div class="wid20">46/2000</div>
+				</li>
+				<li class="wid100 font24 bor-btm">
+					<div class="wid50">标题标题标题标题标题标题标题标题标题</div>
+					<div class="wid20">
+						<p class="fw-700">张国栋</p>
+						<p class="font20">Apr.03</p>
+					</div>
+					<div class="wid20">46/2000</div>
+				</li>
+				<li class="wid100 font24 bor-btm">
+					<div class="wid50">标题标题标题标题标题标题标题标题标题</div>
+					<div class="wid20">
+						<p class="fw-700">张国栋</p>
+						<p class="font20">Apr.03</p>
+					</div>
+					<div class="wid20">46/2000</div>
+				</li>
+			</ul>
+		<div>
+		<!--贴子列表信息end-->
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*导航栏菜单变化*/
+			$('header a').eq(3).css('border','1px solid #fff');
+			$('header a').click(function(){
+				$('header a').css('border','1px solid transparent');
+				$(this).css('border','1px solid #fff');
+			});
+			
+			/*li跳转*/
+			$('.post_list ul li').each(function(){
+				$(this).bind('click',function(){
+					window.location.href = "communication_post.html";
+				});
+			});
+		});
+
+	</script>
+</html>
