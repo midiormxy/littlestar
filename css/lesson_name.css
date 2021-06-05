@@ -1,0 +1,11 @@
+.header{
+	width: 100%;
+}
+.header .lesson_name{
+	margin: -2rem 0 0 0.75rem;
+}
+
+.lesson_content{
+	box-sizing: border-box;
+	padding: 0.75rem;
+}
