@@ -5,18 +5,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 		<title></title>
 		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/lesson_edit.css"/>
+		<link rel="stylesheet" href="css/lesson_apply.css"/>
 	</head>
 	<body>
 		<div class="header bg-orange">
 			<input type="text" class="header_search pr"/>
 			<img src="img/search.png" class="pa search"/>
 		</div>
+		<div class="bg-orange select_menu">
+			<div class="wid33 pr">
+				<div class="wrap">
+					<span class="fl white font26">上课名称</span>
+					<img src="img/select_down.png" class="fr down"/>
+					<div class="clear"></div>
+				</div>
+				<div class="pa down_list wid100" style="margin: -1.25rem 0 0 0;">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</div>
+			</div>
+			<div class="wid33 pr">
+				<div class="wrap">
+					<span class="fl white font26">上课时间</span>
+					<img src="img/select_down.png" class="fr down"/>
+					<div class="clear"></div>
+				</div>
+				<div class="pa down_list wid100" style="margin: -1.25rem 0 0 0;">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</div>
+			</div>
+			<div class="wid33 pr">
+				<div class="wrap">
+					<span class="fl white font26">上课地点</span>
+					<img src="img/select_down.png" class="fr down"/>
+					<div class="clear"></div>
+				</div>
+				<div class="pa down_list wid100" style="margin: -1.25rem 0 0 0;">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>	
 		<div class="lesson_list">
 			<div class="lesson">
 				<div class="lesson_name">
 					<span class="fl">课程名称</span>
-					<a href="javascript:void(0);" class="fr font20">添加到课程表</a>
+					<a href="javascript:void(0);" class="fr font20">报名</a>
 					<p class="clear"></p>
 				</div>
 				<p><span>老师：</span>老师</p>
@@ -28,7 +73,7 @@
 			<div class="lesson">
 				<div class="lesson_name">
 					<span class="fl">课程名称</span>
-					<a href="javascript:void(0);" class="fr font20">添加到课程表</a>
+					<a href="javascript:void(0);" class="fr font20">报名</a>
 					<p class="clear"></p>
 				</div>
 				<p><span>老师：</span>老师</p>
@@ -40,7 +85,7 @@
 			<div class="lesson">
 				<div class="lesson_name">
 					<span class="fl">课程名称</span>
-					<a href="javascript:void(0);" class="fr font20">添加到课程表</a>
+					<a href="javascript:void(0);" class="fr font20">报名</a>
 					<p class="clear"></p>
 				</div>
 				<p><span>老师：</span>老师</p>
@@ -52,7 +97,7 @@
 			<div class="lesson">
 				<div class="lesson_name">
 					<span class="fl">课程名称</span>
-					<a href="javascript:void(0);" class="fr font20">添加到课程表</a>
+					<a href="javascript:void(0);" class="fr font20">报名</a>
 					<p class="clear"></p>
 				</div>
 				<p><span>老师：</span>老师</p>
@@ -65,9 +110,10 @@
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
 	<script>
 		$(function(){
+			//报名按钮
 			$('.lesson_name a').bind('click',function(){
-				$(this).css({'color':'#ec5d2f','border':'1px solid #ec5d2f'}).html('已添加');
-			});
+				$(this).css({'color':'#ec5d2f','border':'1px solid #ec5d2f'}).html('已报名');
+			});	
 		});
 	</script>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/school_lesson.css">
+	</head>
+	<body class="bg-orange">
+		<div class="header tac lh160 font40 white">学员课程</div>
+		<div class="lesson_list">
+			<div class="wid33 bg-heavy-orange font22">
+				<div class="table">
+					<p><img src="img/manage_lesson.png" class="wrap" style="width: 50%;" /></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="wid33 font22">
+				<div class="table">
+					<p><img src="img/profession_lesson.png" class="wrap" style="width: 52%;"/></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="wid33 bg-heavy-orange font22">
+				<div class="table">
+					<p><img src="img/lesson_search.png" class="wrap" style="width: 34%;"/></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="lesson_list">
+			<div class="wid33 font22">
+				<div class="table">
+					<p><img src="img/apply_profession_lesson.png" class="wrap" style="width: 31%;" /></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="wid33 font22 bg-heavy-orange">
+				<div class="table">
+					<p><img src="img/my_lesson.png" class="wrap" style="width: 52%;"/></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="wid33 font22">
+				<div class="table">
+					<p><img src="img/lesson_data.png" class="wrap" style="width: 37%;"/></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="lesson_list">
+			<div class="wid33 bg-heavy-orange font22">
+				<div class="table">
+					<p><img src="img/advide_answer.png" class="wrap" style="width: 50%;" /></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="wid33 font22">
+				<div class="table">
+					<p><img src="img/test_platform.png" class="wrap" style="width: 48%;"/></p>
+					<p>管理类课程</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer">
+			<img src="img/bottom.png" class="wid100" />
+		</div>
+	</body>
+	<script src="js/init.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			//将小正方形的宽度数值赋值给其高度
+			var h = $('body').width()/3 + 'px';
+			$('.wid33').css({'height':h,'line-height':h});
+			console.log(h);
+		});
+		
+		
+	</script>
+</html>
