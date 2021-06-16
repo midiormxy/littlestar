@@ -677,3 +677,63 @@ header a {
     -moz-align-items:flex-end;
     -webkit-align-items:flex-end;
  }
+ 
+ /*新增加载，建设等页面样式   By:赵源   Date：2016-09-09*/
+.content{
+	width: 16rem;
+	height: auto;
+	margin: 0 auto;
+}
+.little_star{
+	width: 100%;
+	text-align: center;
+	margin-top: 5rem;
+}
+.little_star_pic{
+	width: 43%;
+}
+.bottom{
+  margin: 0 auto;
+  margin-top: 24%;
+}
+.bottom_load{
+  margin: 0 auto;
+  margin-top: 41%;
+}
+.bottom_pic{
+	width: 100%;
+}
+.content_middle{
+	width: 100%;
+	text-align: center;
+	margin-top: 4.8rem;
+}
+.build_pic{
+	width: 23%;
+}
+.build_info{
+	text-align: center;
+	font-size: 0.68rem;
+	font-family: "微软雅黑";
+	line-height: 1.7rem;
+}
+dd{margin:0;padding:0;border:0;}
+/* votebox */
+.votebox{
+	width:200px;
+	margin-left:0.1rem;
+	text-align:left;
+	position:relative;
+	z-index:66;
+	margin:5rem auto 0 auto;
+}
+.charts{
+	width:0px;
+}
+/* barbox */
+.barbox{height:1rem;line-height:1rem;overflow:hidden;}
+.barbox dt a{color:#0048CC;}
+.barbox dd{float:left;}
+.barbox dd.last{color:#e05b31;}
+.barbox dd.barline{width:200px;background:url(../img/jdtbg.png) left center no-repeat;height:16px;overflow:hidden;display:inline;}
+.barbox dd.barline div.charts{height:16px;overflow:hidden;background:url(../img/barbg.gif) right center repeat-x;border-radius:8px;}

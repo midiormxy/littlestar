@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>加载页面</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css">
+    </head>
+	<body>
+		<div class="content">
+		    <div class="little_star">
+			<img src="img/littlestar.png" class="little_star_pic">
+		    </div>
+		    <div class="votebox">
+	            <dl class="barbox">
+		           <dd class="barline">
+			         <div w="100" class="charts"></div>
+		            </dd>
+	            </dl>
+	        <p class="build_info"><span class="percent">100</span>%</p>
+            </div>
+	     	<div class="bottom_load">
+	  		<img src="img/bottom_pic.png" class="bottom_pic"/>
+	    	</div>
+		</div>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript">
+         function animate(){
+	      $(".charts").each(function(i,item){
+		     var a=parseInt($(item).attr("w"));
+		     var j=0;
+	  	     $(item).animate({
+			width: a+"%"
+	 	     },3000);
+	      });	     
+       }
+         var num =0;
+	     function add(){
+	     	num +=1;
+	        if(num > 100)
+	        {
+	          num = 100;
+	        }
+	     	document.getElementsByClassName("percent")[0].innerHTML=num;
+	     	setTimeout("add()",30);     	
+	     }
+       animate();
+       add();
+	</script>
+	</body>
+</html>
